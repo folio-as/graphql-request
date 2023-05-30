@@ -692,5 +692,4 @@ function HeadersInstanceToPlainObject(headers: Dom.Response['headers']): Record<
   return o
 }
 
-export { GraphQLWebSocketClient } from './graphql-ws'
 export { resolveRequestDocument } from './resolveRequestDocument'
