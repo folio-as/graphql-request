@@ -46,9 +46,7 @@ export default function createRequestBody(
     return jsonSerializer.stringify(payload)
   }
 
-  const Form = typeof FormData === 'undefined' ? FormDataNode : FormData
-
-  const form = new Form()
+  const form = new FormDataNode()
 
   form.append('operations', jsonSerializer.stringify(clone))
 
